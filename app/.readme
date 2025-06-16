@@ -1,0 +1,26 @@
+💳 Microservicio de Pagos - Payphone
+Este microservicio permite gestionar pagos utilizando la plataforma Payphone. Está desarrollado en Python y expone una API documentada con Swagger para facilitar su integración.
+
+Accede a la documentación interactiva generada con Swagger en:
+
+http://127.0.0.1:8000/docs
+
+Para ejecutar:
+
+uvicorn main:app --reload
+
+🛠️ Tecnologías Utilizadas
+Python 3.x
+
+FastAPI
+
+Swagger UI
+
+Payphone SDK / API
+
+Importante:
+Para confirmar una transaccion:
+Capturar los parámetros de respuesta: identificador de Payphone(ID) y identificador del comercio (clientTransactionId).
+Solicitud POST: Realizar una solicitud POST a la API de Confirmación de Payphone incluyendo los parametros de la transaccion.
+Respuesta Solicitud: Payphone te respondera con el detalle completo de la transacción (estado, monto, autorización, etc.)
+Mostrar Resultado: Presentar al cliente el resultado de la transaccion.
