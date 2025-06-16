@@ -1,4 +1,4 @@
-# payments_integration
+# Payments API Paypohne
 
 💳 Microservicio de Pagos - Payphone
 Este microservicio permite gestionar pagos utilizando la plataforma Payphone. Está desarrollado en Python y expone una API documentada con Swagger para facilitar su integración.
@@ -40,3 +40,6 @@ config.py: Configuración y carga de variables de entorno.
 La API permite iniciar y confirmar pagos usando el servicio de PAYPHONE.
 Puedes adaptar los endpoints y la lógica según las necesidades de tu negocio.
 Consulta la documentación Swagger para ejemplos de uso y pruebas.
+Esto es un repositorio demo, las funciones actuales son funcionales
+Se puede usar tanto local como docker
+Es un proyecto independiente
